@@ -37,9 +37,11 @@ class WebViewActivity : AppCompatActivity() {
         //To debug the WebView, open Chrome and type the 'chrome://inspect' url in the browser.
         WebView.setWebContentsDebuggingEnabled(true)
         binding.webview.settings.javaScriptEnabled = true
-        binding.webview.addJavascriptInterface(JSInterfaceHandler(this), LoginInfo.FASTLINK_WEBVIEW_HANDLER_NAME)
+        binding.webview.addJavascriptInterface(JSInterfaceHandler(this),
+                LoginInfo.FASTLINK_WEBVIEW_HANDLER_NAME)
         try {
-            val postData = "accessToken=Bearer " + token + "&extraParams=" + URLEncoder.encode("configName=aggregation", "UTF-8")
+            val postData = "accessToken=Bearer " + token + "&extraParams=" +
+                    URLEncoder.encode("configName=aggregation", "UTF-8")
 
             binding.webview.postUrl(LoginInfo.FASTLINK_URL, postData.toByteArray())
         } catch (e: UnsupportedEncodingException) {

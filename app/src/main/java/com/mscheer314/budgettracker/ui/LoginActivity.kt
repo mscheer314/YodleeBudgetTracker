@@ -1,5 +1,3 @@
-// Copyright (c) 2019 Yodlee, Inc. All Rights Reserved.
-// Licensed under the MIT License. See `LICENSE` for details.
 package com.mscheer314.budgettracker.ui
 
 import android.content.Context

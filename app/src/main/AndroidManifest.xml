@@ -13,7 +13,6 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="com.mscheer314.budgettracker.ui.BudgetOverview"></activity>
-        <activity android:name="com.mscheer314.budgettracker.EventsInfoActivity" />
         <activity android:name="com.mscheer314.budgettracker.ui.WebViewActivity" />
         <activity android:name="com.mscheer314.budgettracker.ui.LoginActivity">
             <intent-filter>
