@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.yodlee.fastlink", appContext.getPackageName());
+        assertEquals("com.mscheer314.budgettracker", appContext.getPackageName());
     }
 }

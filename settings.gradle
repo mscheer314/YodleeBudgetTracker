@@ -1,2 +1,2 @@
-rootProject.name='FastLink'
+rootProject.name='Budget Tracker'
 include ':app'
