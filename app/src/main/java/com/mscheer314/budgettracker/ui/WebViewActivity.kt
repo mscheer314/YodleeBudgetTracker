@@ -28,7 +28,6 @@ class WebViewActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val intent = intent
         val token = intent.getStringExtra("token")
 
         binding.webview.webViewClient = webClient
